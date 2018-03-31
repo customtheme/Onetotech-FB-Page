@@ -1,5 +1,5 @@
 <?php
-$to = "handyman.shirts@gmail.com";
+$to = "send@example.com";
 $subject = "HTML email";
 
 $message = "
@@ -32,8 +32,8 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
-$headers .= 'From: <info@onetotech.com>' . "\r\n";
-$headers .= 'Cc: anissunaryati@gmail.com' . "\r\n";
+$headers .= 'From: <from@example.com>' . "\r\n";
+$headers .= 'Cc: cc@example.com' . "\r\n";
 
 mail($to,$subject,$message,$headers);
 ?>
